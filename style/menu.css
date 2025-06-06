@@ -41,7 +41,7 @@
   color: #ff4e30;
 }
 
-@media (max-width: 1410px) {
+@media (max-width: 1236px) {
   .menu {
     display: none;
   }
