@@ -29,7 +29,7 @@ body {
 
 .header-text {
   width: 70%;
-  padding-left: 5em;
+  padding-left: 2%;
   text-align: left;
   align-items: center;
 }
@@ -163,22 +163,9 @@ body {
     z-index: 100;
   }
 
-  .nav_menu {
-    display: block;
-  }
-
-  .nav__link--show {
-    --show: block;
-    opacity: 1;
-    pointer-events: unset;
-  }
-
-  .nav__link--menu.nav__link--show {
-    left: 0;
-    pointer-events: all;
-    z-index: 100000;
-  }
+  
 }
+
 
 .top-bar.fixed {
   position: fixed;
@@ -282,7 +269,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  gap: 8px;
+  gap: 2em;
 }
 
 .video {
@@ -294,7 +281,7 @@ body {
 .video-bg img {
   position: absolute;
   top: -70px;
-  left: 40%;
+  left: 20%;
 
   max-width: 600px;
   z-index: 0;
@@ -303,7 +290,7 @@ body {
 
 .video-wrapper {
   position: relative;
-  left: 43%;
+  left: 23%;
   top: -50px;
   cursor: pointer;
   overflow: hidden;
@@ -330,7 +317,7 @@ body {
 
 
 .texto {
-  width: 75%;
+  width: 80%;
 }
 
 .texto h1 {
@@ -376,16 +363,16 @@ body {
   padding: 30px 0px;
   display: flex;
   justify-content: center;
-  gap: 0px;
+  gap: .5em;
   border-radius: 12px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .columna {
-  padding: 30px;
+  
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
   transition: transform 0.2s ease;
 }
@@ -397,7 +384,7 @@ body {
 }
 
 .hijo1 h1 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 500;
   text-align: center;
   margin: 0px;
