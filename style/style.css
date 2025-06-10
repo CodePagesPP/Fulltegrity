@@ -373,6 +373,7 @@ body {
   font-weight: 600;
   line-height: 100%;
   margin-bottom: 20px;
+  margin-top: 0px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -453,5 +454,231 @@ body {
   .columna img {
     width: 50px;
     height: 50px;
+  }
+}
+
+/*TARJETAS PRODUCTOS*/
+
+.section-tarjetas {
+  background-image: url('https://toptradesourcing.com/wp-content/uploads/2023/12/top_china_source_products.webp');
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.text-container {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  justify-items: center;
+  text-align: center;
+  max-width: 60%;
+}
+
+.text-container h1{
+  font-size: 2.4vw;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5em;
+}
+
+.product {
+  align-items: center;
+  justify-items: center;
+  background-color: #FFF;
+  box-shadow: 0px 0px 5px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  align-items: center;
+  justify-items: center;
+  max-height: 324px;
+  min-width: 70%;
+  border: 4px solid #FFF;
+}
+
+.product img:hover {
+  align-items: center;
+  justify-items: center;
+  max-width: 100%;
+  border: 4px solid #ff7b00;
+  transition: all 0.3s ease; 
+}
+
+.product p {
+    font-size: 1vw;
+    margin: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: #FFF;
+}
+
+/*TOP TRADE*/
+
+
+.why-toptrade {
+  background-image: url('https://toptradesourcing.com/wp-content/uploads/2023/12/top_service_bg.webp');
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.why-toptrade .containertoptrade {
+  
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+    
+}
+
+
+.why-toptrade h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.why-toptrade .subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  flex-grow: 1;
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  padding: 30px 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+.icon:hover {
+  transform: translateY(-5px);
+  background-color: #f7551a;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  background-color:  #ff6f3c;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.card .highlight {
+  color: red;
+  font-weight: bold;
+}
+
+
+/*Testimonios*/
+.testimonios {
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.testimonios h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.card-testimonios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.testi {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.testi img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(255, 87, 34, 0.85); 
+  color: white;
+  width: 80%;
+  padding: 12px;
+  text-align: left;
+  font-size: 0.95rem;
+  margin-left: 20px;
+}
+
+.overlay strong {
+  font-weight: bold;
+}
+
+
+@media (max-width: 1024px) {
+  .card-testimonios {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-testimonios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-testimonios {
+    grid-template-columns: 1fr;
   }
 }
