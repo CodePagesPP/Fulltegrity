@@ -469,11 +469,15 @@ body {
 
 .text-container {
   padding-top: 30px;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
   text-align: center;
   max-width: 1200px;
   width: 100%;
   box-sizing: border-box;
+}
+
+.text-container p {
+  line-height: 30px;
 }
 
 .text-container h1{
@@ -541,7 +545,6 @@ body {
 .why-toptrade {
   background-image: url('https://toptradesourcing.com/wp-content/uploads/2023/12/top_service_bg.webp');
   padding: 60px 60px;
-  font-family: 'Segoe UI', sans-serif;
   text-align: center;
 }
 
@@ -551,35 +554,38 @@ body {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, 1fr);
-    
+  
 }
-
 
 .why-toptrade h1 {
   font-size: 2rem;
   font-weight: 700;
   color: #1a1a1a;
+  margin: 0;
 }
 
 .why-toptrade .subtitle {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #666;
-  margin: 10px 0 40px;
-  max-width: 800px;
+  margin: 10px 0 0px;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .cards {
+  padding-top: 50px;
   display: flex;
+  align-content: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 18px;
 }
 
 .card {
-  flex-grow: 1;
-  width: 200px;
-  height: 300px;
+  
+  width: 300px;
+  
   background: #fff;
   padding: 30px 10px;
   
@@ -623,7 +629,7 @@ body {
 }
 
 .card .highlight {
-  color: red;
+  color: rgb(221, 81, 0);
   font-weight: bold;
 }
 
