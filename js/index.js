@@ -62,7 +62,7 @@ function setPositionByIndex() {
   currentTranslate = -currentIndex * window.innerWidth;
   prevTranslate = currentTranslate;
   carousel.style.transform = `translateX(${currentTranslate}px)`;
-  animateCurrentSlide(); 
+  animateCurrentSlide();
 }
 
 carousel.addEventListener("mousedown", (e) => {
@@ -82,7 +82,6 @@ window.addEventListener("mouseup", (e) => {
   }
 
   setPositionByIndex();
-
   isDragging = false;
   carousel.style.cursor = "grab";
 });
@@ -90,7 +89,13 @@ window.addEventListener("mouseup", (e) => {
 window.addEventListener("mousemove", (e) => {
   if (!isDragging) return;
   const deltaX = e.pageX - startX;
-  currentTranslate = prevTranslate + deltaX;
+  let tempTranslate = prevTranslate + deltaX;
+
+  // Limitar el movimiento dentro de los límites del carrusel
+  const maxTranslate = 0;
+  const minTranslate = -((items.length - 1) * window.innerWidth);
+  currentTranslate = Math.max(Math.min(tempTranslate, maxTranslate), minTranslate);
+
   carousel.style.transform = `translateX(${currentTranslate}px)`;
 });
 
@@ -101,6 +106,7 @@ carousel.addEventListener("touchstart", (e) => {
 });
 
 carousel.addEventListener("touchend", (e) => {
+  if (!isDragging) return;
   const moved = e.changedTouches[0].pageX - startX;
 
   if (moved < -threshold && currentIndex < items.length - 1) {
@@ -116,7 +122,12 @@ carousel.addEventListener("touchend", (e) => {
 carousel.addEventListener("touchmove", (e) => {
   if (!isDragging) return;
   const deltaX = e.touches[0].pageX - startX;
-  currentTranslate = prevTranslate + deltaX;
+  let tempTranslate = prevTranslate + deltaX;
+
+  const maxTranslate = 0;
+  const minTranslate = -((items.length - 1) * window.innerWidth);
+  currentTranslate = Math.max(Math.min(tempTranslate, maxTranslate), minTranslate);
+
   carousel.style.transform = `translateX(${currentTranslate}px)`;
 });
 
