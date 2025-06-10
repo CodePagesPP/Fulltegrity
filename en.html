@@ -1,39 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Fulltegrity</title>
-    <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/menu.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR INFOOOOOO-->
     <section class="navbar">
+      <div class="infoheader">
+        <div class="header-text">
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              widht="20px"
+              fill="white"
+              viewBox="0 -200 580 684"
+            >
+              <path
+                d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2c0 0 0 0 0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 
+                        31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 
+                        14.3 15.4 21.4c0 0 0 0 0 0c19.8 27.1 39.7 54.4 49.2 86.2l160 0zM192 512c44.2 0 80-35.8 80-80l0-16-160 
+                        0 0 16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 
+                        7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"
+              />
+            </svg>
+            Actualmente sólo se aceptan pedidos por importes superiores <span>$5000</span>,
+            priorizando a las empresas sobre los individuos y determinadas
+            startups.
+          </p>
+        </div>
+        <div class="info">
+          <div class="bandera">
+            <a id="language-toggle" href="en.html">
+              <img id="flag" src="./assets/en.svg" alt="" />
+              <span id="text">English</span>
+            </a>
+          </div>
 
-    <div class="infoheader">
-            <div class="header-text">
-                <p>orders are currently only accepted for amounts over $5000,  prioritizing businesses over individuals and certain startups.</p>
-            </div>
+          <div class="bandera">
+            <a id="language-toggle" href="index.html">
+              <img id="flag" src="./assets/es.svg" alt="" />
+              <span id="text">Spanish</span>
+            </a>
+          </div>
+        </div>
+      </div>
 
-            <div class="info">
-                <div class="bandera">
-                    <a id="language-toggle" href="en.html">
-                        <img id="flag" src="./assets/en.svg" alt="">
-                        <span id="text">English</span>
-                    </a>
-                </div>
+      <div class="top-bar">
+        <div class="container">
+          <div class="logo">
+            <a href="#">
+              <img src="https://toptradesourcing.com/wp-content/uploads/2022/10/1-3.png" alt="Logo de la empresa" />
+            </a>
+          </div>
 
-                <div class="bandera">
-                    <a id="language-toggle" href="index.html">
-                        <img id="flag" src="./assets/es.svg" alt="">
-                        <span id="text">Español</span>
-                    </a>
-                </div>
-            </div>
-    </div>
+          <nav class="menu">
+            <ul class="links links--menu">
+              <li><a href="#" class="active">Inicio</a></li>
+              <li><a href="#">Nuestros servicios</a></li>
+              <li><a href="#">GAMA DE PRODUCTOS</a></li>
+              <li><a href="#">Agente Yiwu</a></li>
+              <li><a href="#">Sobre Nosotros</a></li>
+              <li><a href="#">Noticias</a></li>
+              <li><a href="#">Contáctenos</a></li>
+            </ul>
+          </nav>
 
+          <div class="catalogo">
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <a href="#" class="btn-descarga">Descarga del catálogo</a>
+          </div>
+        </div>
+
+        <div class="side-menu" id="sideMenu">
+          <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">NUESTROS SERVICIOS</a></li>
+            <li><a href="#">GAMA DE PRODUCTOS</a></li>
+            <li><a href="#">AGENTE</a></li>
+            <li><a href="#">SOBRE NOSOTROS</a></li>
+            <li><a href="#">NOTICIAS</a></li>
+            <li><a href="#">CONTÁCTENOS</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-<script src="./js/index.js"></script>
-<script src="./js/language.js"></script>
-</body>
+    <!-- PORTADAAAAAAAAAAAAAAA-->
+    <section class="portada">
+      <div class="hero-container">
+        <div class="carousel" id="carousel">
+          <div class="carousel-item active">
+            <img src="./assets/img1.jpg" alt="Slide 1" draggable="false" />
+            <div class="hero-text" data-os="fade-up">
+              <h1 class="slide-up">Top 5 Sourcing Agent in China</h1>
+              <p class="slide-up delay">
+                We specialise in sourcing and importing everyday essentials from
+                China for all types of businesses.
+              </p>
+              <a href="#" class="cta-button slide-up delay2"
+                >Learn more about sourcing agents</a
+              >
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/img2.jpg" alt="Slide 2" draggable="false" />
+            <div class="hero-text" data-os="fade-up">
+              <h1 class="slide-up">Find the Best Products</h1>
+              <p class="slide-up delay">
+                Discover high-quality items at the best prices directly from
+                trusted factories.
+              </p>
+              <a href="#" class="cta-button slide-up delay2"
+                >Explore products</a
+              >
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./assets/img3.jpg" alt="Slide 3" draggable="false" />
+            <div class="hero-text" data-os="fade-up">
+              <h1 class="slide-up">Work with Top Agents</h1>
+              <p class="slide-up delay">
+                Our experienced sourcing agents ensure your supply chain is
+                smooth and efficient.
+              </p>
+              <a href="#" class="cta-button slide-up delay2">Meet our agents</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTA-->
+    <section class="section-pregunta">
+      <div class="pregunta">
+        <div class="video">
+            <div class="video-bg">
+                <img
+                src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_vedio_bg.png"
+                alt=""
+                />
+            </div>
+
+          <div class="video-wrapper" onclick="loadVideo(this)">
+                <img
+                    src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_vedio_face.png"
+                    alt="Portada del video"
+                    class="video-thumbnail"
+                />
+            <div class="play-button">&#9658;</div>
+            </div>
+           
+            
+        </div>
+
+        <div class="texto">
+            <h1>
+                ¿Buscas una empresa de abastecimiento en China?
+                
+            </h1>
+            <img
+                src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_right_arrow.png"
+                alt=""
+                class="icono"
+                />
+            <p>
+                Toptrade Sourcing es una subsidiaria de Sellers Union Group, fundada
+                en 1997 y ubicada en la ciudad portuaria de Ningbo. Después de más
+                de 26 años de excelentes ventas y servicio, nuestro equipo de ventas
+                se ha ampliado a 2,000 empleados. Ayudamos a empresas de todos los
+                tamaños, incluidos minoristas, cadenas de supermercados, mayoristas,
+                tiendas de comercio electrónico y agentes de importación, a obtener,
+                diseñar, fabricar e importar productos de China con facilidad.
+            </p>
+            <a class="button-text" href="#">Conozca más sobre nosotros</a>
+        </div>
+      </div>
+    <!-- BARRA NUMERICA-->
+      <div class="barra">
+        <div class="barra-container">
+            
+            <div class="columna">
+                <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_Import_export_credit.png" alt="">
+                <div class="columna-texto">
+                    <div class="hijo1">
+                        <h1>26+ AÑOS</h2>
+                    </div>
+                    <div class="hijo2">
+                        <span>Experiencia de exportacion</span>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="columna">
+                <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_factory.png" alt=""> 
+                <div class="columna-texto">
+                    <div class="hijo1">
+                        <h1>500,000</h1>
+                    </div>
+                    
+                    <div class="hijo2">
+                        <span>Productos</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="columna">
+                <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_area.png" alt=""> 
+                <div class="columna-texto">
+                    <div class="hijo1"> 
+                        <h1>10,000m²</h1>
+                    </div>
+                    
+                    <div class="hijo2">
+                        <span>Showroom</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="columna">
+                <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_usd.png" alt=""> 
+                <div class="columna-texto">
+                    <div class="hijo1">
+                        <h1>$1 BILLON</h1>
+                    </div>
+                    
+                    <div class="hijo2">
+                        <span>Facturación 2023</span>
+                    </div>
+                </div>
+                
+               
+            </div>
+
+            <div class="columna">
+                <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_customers.png" alt=""> 
+                <div class="columna-texto">
+                    <div class="hijo1">
+                       <h1>10,000+</h1>
+                    </div>
+                    
+                    <div class="hijo2">
+                        <span>Clientes globales</span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/language.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
