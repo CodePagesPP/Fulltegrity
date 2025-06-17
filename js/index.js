@@ -5,7 +5,7 @@ let startX = 0;
 let currentTranslate = 0;
 let prevTranslate = 0;
 let currentIndex = 1; 
-const threshold = 800;
+const threshold = 500;
 
 
 const firstClone = items[0].cloneNode(true);
