@@ -80,7 +80,7 @@ body {
 }
 
 .container {
-  max-width: 1680px;
+  max-width: 1400px; /*cambiar en caso de error*/
   margin: 0 auto;
   padding: 15px 20px;
   display: flex;
@@ -152,6 +152,9 @@ body {
     z-index: 100;
   }
 
+.top-bar.fixed {
+    top: 0;
+}
 
 @media (max-width: 980px) {
   .top-bar {
@@ -163,6 +166,10 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     z-index: 100;
   }
+
+  .top-bar.fixed {
+        top: 0;
+    }
 }
 
 
@@ -234,6 +241,7 @@ body {
   display: flex;
   height: 100%;
   transition: transform 0.3s ease;
+  
 }
 
 .carousel-item {
@@ -487,7 +495,7 @@ body {
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.5em;
+  gap: 20px;
   margin: 0 auto;
   padding: 0 20px; /* para que respire en pantallas chicas */
   box-sizing: border-box;
@@ -509,10 +517,12 @@ body {
 }
 
 .product img {
+  height: 332px;
+  width: 332px;
   align-items: center;
   justify-items: center;
-  max-height: 324px;
-
+  max-height: 332px;
+  max-width: 332px;
   border: 4px solid #FFF;
 }
 
@@ -637,8 +647,8 @@ body {
 /*Testimonios*/
 .testimonios {
   padding: 60px 20px;
-  font-family: 'Segoe UI', sans-serif;
   text-align: center;
+  justify-items: center;
 }
 
 .testimonios h1 {
@@ -648,6 +658,7 @@ body {
 }
 
 .card-testimonios {
+  max-width: 80%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -658,7 +669,7 @@ body {
 .testi {
   position: relative;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -710,40 +721,47 @@ body {
 /*Solicitud*/
 
 .solicitud{
-  font-family: 'Segoe UI', sans-serif;
   text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
 }
 
-.solicitud h1 {
+.solicitud h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #1a1a1a;
 }
 
-.solicitud {
-  padding: 2rem;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-}
 
 .container {
-  display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: space-between;
+  
 }
 
 .contacto {
   background-color: #B5B7BB;
+  background-image: url('https://toptradesourcing.com/wp-content/uploads/2024/08/form_circle_bg.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
   color: white;
   padding: 2rem;
   flex: 1 1 300px;
-  max-width: 350px;
+  max-width: 370px;
+  border-radius: 4px;
+}
+
+.imagen-contacto {
+  display: flex;
+}
+
+.imagen-contacto p {
+  padding: 20px;
 }
 
 .contacto img {
   width: 150px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .qr-codes {
@@ -759,20 +777,19 @@ body {
 
 .formulario {
   flex: 2 1 500px;
-  background-color: white;
+  text-align: left;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #ccc;
-}
-
-.form-desc {
-  margin-bottom: 1.5rem;
+  
 }
 
 .grid-form {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1.5rem;
+}
+
+.grid-form label {
+  font-weight: bold;
 }
 
 .grid-form input,
@@ -781,30 +798,291 @@ body {
   padding: 0.5rem;
   margin-top: 0.25rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 2px;
+}
+
+.contact-container {
+  display: flex;
+}
+
+.contact select{
+  flex: 1;
+  font-family: 'Poppins';
+}
+
+.contact input{
+  flex: 2;
+  font-family: 'Poppins';
+}
+
+.grid-form .select {
+  width: 100px;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.grid-form .checkbox {
+  width: 30px;
+  padding: 0.5rem;
+  margin-top: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.mensaje {
+  padding-top: 20px;
+}
+
+.mensaje label {
+  font-weight: bold;
 }
 
 .mensaje textarea {
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.25rem;
-  border-radius: 4px;
+  border-radius: 2px;
   border: 1px solid #ccc;
   resize: vertical;
+  font-family: 'Poppins';
+}
+
+.mensaje p {
+  margin: 0;
 }
 
 .btn-enviar {
   background-color: #f44336;
   color: white;
-  padding: 1rem 2rem;
+  padding: 1em 3em;
+  line-height: 24px;
+  font-size: 18px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
   margin-top: 1rem;
+  font-family: 'Poppins';
 }
 
 .aviso {
   font-size: 0.9rem;
   color: #666;
-  margin-top: 0.5rem;
+}
+
+.boton-form{
+  text-align: center;
+}
+
+/*PRODUCT NEWS CHINA*/
+.product-news {
+  justify-content: center;
+  justify-items: center;
+  padding-bottom: 100px;
+}
+
+.product-news .text-container {
+  min-width: 100%;
+  padding-bottom: 15px;
+}
+
+
+.product-news .text-container h1{
+  font-size: 2.2em;
+  font-weight: 600;
+}
+
+.fila-news {
+  max-width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 40px;
+}
+
+.new {
+  max-width: 360px;
+  max-height: 520px;
+}
+
+.new img {
+  width: 100%;
+  height: 218px;
+  display: block;
+}
+
+.descripcion {
+  padding: 40px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.leer-mas {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.leer-mas a {
+  color: #f0622f;
+}
+
+@media (max-width: 768px) {
+  .fila-news {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*FOOTERRR*/
+
+.footer {
+  background-color: #022541;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-logo,
+.footer-contact {
+  flex: 1 1;
+}
+
+
+
+
+.footer-logo img.logo {
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #ff5c1f;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.footer-products h3,
+.footer-contact h3 {
+  margin-bottom: 10px;
+}
+
+
+.footer-products{
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.product-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+.product-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.product-columns li {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000; /* Color por defecto */
+}
+
+.social-icons a.linkedin {
+  background-color: #0077b5;
+}
+.social-icons a.whatsapp {
+  background-color: #25D366;
+}
+.social-icons a.youtube {
+  background-color: #cd201f;
+}
+.social-icons a.facebook {
+  background-color: #3b5998;
+}
+
+.social-icons svg {
+  width: 15px;
+  height: 15px;
+  fill: white; /* Esto cambia el color interno a blanco, si el SVG lo permite */
+}
+
+.footer-bottom {
+  border-top: 1px solid #ffffff;
+  padding-top: 15px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-bottom .copy {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 13px;
+}
+
+.footer-bottom a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .product-columns {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
 }
