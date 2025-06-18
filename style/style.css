@@ -873,6 +873,9 @@ body {
   text-align: center;
 }
 
+.contacto a {
+  text-decoration: none;
+}
 /*FOOTERRR*/
 
 .footer {
