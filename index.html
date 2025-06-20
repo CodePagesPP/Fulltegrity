@@ -12,7 +12,7 @@
   </head>
   <body>
     <!-- NAVBAR INFOOOOOO-->
-    <section class="navbar">
+    <section class="navbar" id="inicio">
       <div class="infoheader">
         <div class="header-text">
           <p>
@@ -38,16 +38,16 @@
         </div>
         <div class="info">
           <div class="bandera">
-            <a id="language-toggle" href="en.html">
-              <img id="flag" src="./assets/en.svg" alt="" />
-              <span id="text">English</span>
+            <a href="#" onclick="redirectToPage('en.html', event)">
+              <img src="./assets/en.svg" alt="" />
+              <span>English</span>
             </a>
           </div>
 
           <div class="bandera">
-            <a id="language-toggle" href="index.html">
-              <img id="flag" src="./assets/es.svg" alt="" />
-              <span id="text">Spanish</span>
+            <a href="#" onclick="redirectToPage('index.html', event)">
+              <img src="./assets/es.svg" alt="" />
+              <span>Spanish</span>
             </a>
           </div>
         </div>
@@ -63,10 +63,10 @@
 
           <nav class="menu">
             <ul class="links links--menu">
-              <li><a href="#" class="active">Inicio</a></li>
-              <li><a href="#">Sobre Nosotros</a></li>
-              <li><a href="#">Línea de productos</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="javascript:void(0)" onclick="scrollToSection('inicio', this)" class="active">Inicio</a></li>
+              <li><a href="javascript:void(0)" onclick="scrollToSection('sobre-nosotros', this)">Sobre Nosotros</a></li>
+              <li><a href="javascript:void(0)" onclick="scrollToSection('linea-productos', this)">Línea de productos</a></li>
+              <li><a href="javascript:void(0)" onclick="scrollToSection('formulario', this)">Contacto</a></li>
             </ul>
           </nav>
 
@@ -79,9 +79,9 @@
         <div class="side-menu" id="sideMenu">
           <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Línea de productos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#linea-productos">Línea de productos</a></li>
+            <li><a href="#formulario">Contacto</a></li>
           </ul>
         </div>
       </div>
@@ -159,8 +159,7 @@
 
         <div class="texto">
             <h1>
-                ¿Buscas una empresa de abastecimiento en China?
-                
+                ¿Buscas un socio para abastecerte de empaques y envases desde China?   
             </h1>
             <img
                 src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_right_arrow.png"
@@ -168,38 +167,32 @@
                 class="icono"
                 />
             <p>
-                Toptrade Sourcing es una subsidiaria de Sellers Union Group, fundada
-                en 1997 y ubicada en la ciudad portuaria de Ningbo. Después de más
-                de 26 años de excelentes ventas y servicio, nuestro equipo de ventas
-                se ha ampliado a 2,000 empleados. Ayudamos a empresas de todos los
-                tamaños, incluidos minoristas, cadenas de supermercados, mayoristas,
-                tiendas de comercio electrónico y agentes de importación, a obtener,
-                diseñar, fabricar e importar productos de China con facilidad.
+                Fulltegrity, se fundó gracias a las ventajas del puerto de Ningbo, poseemos una sólida competitividad en transporte, transporte de mercancías, almacenamiento y comercio, ofreciendo a sus clientes un servicio integral de exportación e importación.
+                Nos especializamos en la línea de empaques y envases, con una cadena de suministro integrada de alta calidad. Desde nuestra fundación hasta la actualidad, hemos establecido una estrecha colaboración con numerosos clientes importantes de todo el mundo. Nos esforzamos constantemente por satisfacer las necesidades de nuestros clientes y les acompañamos para consolidar una posición sólida en el mercado.
             </p>
-            <a class="button-text" href="#">Conozca más sobre nosotros</a>
         </div>
       </div>
     <!-- BARRA NUMERICA-->
-      <div class="barra">
+      <div class="barra"  id="sobre-nosotros">
         <div class="barra-container">
             
             <div class="columna">
                 <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_Import_export_credit.png" alt="">
                 <div class="columna-texto">
                     <div class="hijo1">
-                        <h1><span class="counter" data-target="26">0</span>+ AÑOS</h2>
+                        <h1>+<span class="counter" data-target="30">0</span>AÑOS</h2>
                     </div>
                     <div class="hijo2">
-                        <span>Experiencia de exportacion</span>
+                        <span>Experiencia en la categoría</span>
                     </div>
                 </div> 
             </div>
 
-            <div class="columna">
+            <div class="columna" id="product-counter">
                 <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_factory.png" alt=""> 
                 <div class="columna-texto">
                     <div class="hijo1">
-                        <h1><span class="counter" data-target="500000">0</span></h1>
+                       <h1><span class="counter" data-target="1000">0</span></h1>
                     </div>
                     
                     <div class="hijo2">
@@ -213,36 +206,21 @@
                 <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_area.png" alt=""> 
                 <div class="columna-texto">
                     <div class="hijo1"> 
-                        <h1><span class="counter" data-target="10000">0</span>m²</h1>
+                        <h1><span class="counter" data-target="150000">0</span>m²</h1>
                     </div>
                     
                     <div class="hijo2">
-                        <span>Showroom</span>
+                        <span>Fábrica</span>
                     </div>
                 </div>
                 
-            </div>
-
-            <div class="columna">
-                <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_usd.png" alt=""> 
-                <div class="columna-texto">
-                    <div class="hijo1">
-                        <h1>$ <span class="counter" data-target="1">0</span> BILLON</h1>
-                    </div>
-                    
-                    <div class="hijo2">
-                        <span>Facturación 2023</span>
-                    </div>
-                </div>
-                
-               
             </div>
 
             <div class="columna">
                 <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_customers.png" alt=""> 
                 <div class="columna-texto">
                     <div class="hijo1">
-                       <h1> <span class="counter" data-target="10000">0</span>+</h1>
+                       <h1>+<span class="counter" data-target="2000">0</span></h1>
                     </div>
                     
                     <div class="hijo2">
@@ -257,50 +235,38 @@
      <!-- TOP TRADE -->
      
     <section class="why-toptrade">
-      <div class="containertoptrade">
-       
+      <div class="text-container">
           <h1>¿Por qué Fulltegrity?</h1>
-          <p class="subtitle">Somos un equipo profesional con +30 años de experiencia en la fabricación y exportación de empaques en diversos materiales.</p>
+          <p>Somos un equipo profesional con +30 años de experiencia en la fabricación y exportación de empaques en diversos materiales.</p>
+        </div>
         
-      
+      <div class="containertoptrade">  
         <div class="cards">
           <div class="card">
-            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 1024 1024" width="34px" height="34px"><path d="M5.06 321.368l108.814-33.864v290.144l-11.674 0.94v-82.69H84.756v101.674l9.448-0.812 19.67-1.668v168.886H5.058v-442.61z m320.498-86.452l695.812 118.69v411.57H325.558v-530.26z m61.912 83.63v383.78c0 14.452 11.672 26.166 26.08 26.166 14.45 0 26.166-11.714 26.166-26.168v-383.78c0-14.45-11.716-26.164-26.168-26.164-14.406 0-26.08 11.714-26.08 26.166z m545.308 73.968v314.554c0 11.844 9.58 21.424 21.464 21.424 11.8 0 21.378-9.58 21.378-21.424V392.514c0-11.8-9.578-21.464-21.378-21.464-11.884 0-21.464 9.664-21.464 21.464z m-95.688-11.972v325.76c0 12.268 9.92 22.19 22.19 22.19 12.228 0 22.192-9.92 22.192-22.192V380.542c0-12.228-9.964-22.146-22.192-22.146-12.27 0-22.19 9.918-22.19 22.146zM731.054 368.27v337.216c0 12.7 10.262 23.006 22.96 23.006 12.7 0 22.96-10.304 22.96-23.006V368.27c0-12.696-10.26-22.96-22.96-22.96-12.698 0-22.96 10.264-22.96 22.96z m-106.206-14.92v351.194a23.908 23.908 0 0 0 23.946 23.948c13.168 0 23.9-10.692 23.9-23.948V353.35c0-13.17-10.732-23.86-23.9-23.86-13.254 0-23.946 10.69-23.946 23.86z m-115.224-17.274v367.36c0 13.852 11.2 25.056 25.01 25.056 13.854 0 25.056-11.204 25.056-25.054v-367.36c0-13.856-11.2-25.06-25.056-25.06-13.81 0-25.01 11.204-25.01 25.06z m-378.476-54l155.16-48.316v530.22h-155.16V282.074z" fill="#ffffff"></path></svg></div>
+            <div class="icon">
+              <img src="./assets/contenedor.png" alt="">
+            </div>
             <h3>Carga de artículos mixtos</h3>
             <p>Seleccione una amplia gama de productos y ofrezca transporte de conjuntos de varios artículos a precios competitivos. Cada contenedor puede contener <span class="highlight">10-500</span> artículos.</p>
           </div>
           <div class="card">
-            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 1024 1024" width="34px" height="34px"><path d="M512 0C229.2736 0 0 229.2736 0 512s229.2736 512 512 512 512-229.2736 512-512S794.7264 0 512 0z m25.4976 760.2176l0.2048 36.2496c0 5.0176-4.096 9.216-9.1136 9.216H496.128a9.216 9.216 0 0 1-9.1648-9.1136v-35.84c-101.4784-7.5776-149.248-65.4336-154.368-128.256a9.1648 9.1648 0 0 1 9.1136-9.9328h52.7872c4.4544 0 8.3456 3.1744 9.0624 7.5264 5.8368 36.1984 34.048 63.2832 84.6848 70.0416V537.088l-28.2624-7.168c-59.7504-14.336-116.6848-51.5584-116.6848-128.8192 0-83.3536 63.3344-128.1536 144.2304-136.0384V227.328a9.216 9.216 0 0 1 9.1648-9.1648h32.1024a9.216 9.216 0 0 1 9.1648 9.1648v37.376c78.2848 7.8848 137.0112 53.6064 143.872 124.7744a9.1136 9.1136 0 0 1-9.1648 10.0864h-51.3024a9.1136 9.1136 0 0 1-9.0112-7.8848c-4.608-33.3824-31.3344-60.5696-74.8544-66.56v153.4976l29.0304 6.7584c74.0352 18.2784 124.416 53.7088 124.416 133.0176 0 86.016-64 134.0416-153.4464 141.824zM414.4128 395.776c0 29.0304 17.92 51.5584 56.576 65.4848 5.376 2.1504 10.752 3.8912 17.1008 5.7344V325.2736c-42.1376 5.376-73.728 29.0304-73.728 70.5024z m133.12 154.5216a160.9216 160.9216 0 0 1-10.0352-2.56v152.832c48.64-4.352 82.2784-31.0784 82.2784-75.8784 0-35.072-18.176-57.9584-72.192-74.3936z" fill="#ffffff"></path></svg></div>
+            <div class="icon">
+              <img src="./assets/precio.png" alt="">
+            </div>
             <h3>Precios competitivos</h3>
             <p>Establecimos relaciones de cooperación a largo plazo con muchas fábricas; incluso tenemos acciones en algunas fábricas, lo que le permite ahorrar <span class="highlight">30% -50%</span> de los costos de compra.</p>
           </div>
           <div class="card">
-            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 1025 1024" width="34px" height="34px"><path d="M450.87616 529.792L50.23616 339.264a72.448 72.448 0 0 1 0-135.104L450.87616 13.568a144.896 144.896 0 0 1 122.112 0l400.64 190.592a72.448 72.448 0 0 1 0 135.104l-400.64 190.528c-38.72 17.984-83.392 17.984-122.112 0z m61.056 254.912c-29.12 0-57.92-6.72-84.032-19.584L34.81216 569.856a54.4 54.4 0 1 1 48.192-96.896l392.704 195.2c22.912 11.136 49.6 11.136 72.448 0l393.088-195.2a54.4 54.4 0 1 1 48.192 96.896L595.96416 765.12a189.44 189.44 0 0 1-84.032 19.584z m0 229.632a189.44 189.44 0 0 1-84.032-19.52L34.81216 799.552a54.4 54.4 0 1 1 48.192-96.896l392.704 195.2c22.848 11.328 49.6 11.328 72.448 0l393.088-195.2a54.4 54.4 0 1 1 48.192 96.896l-393.472 195.2a189.44 189.44 0 0 1-84.032 19.584z" fill="#ffffff"></path></svg></div>
+            <div class="icon">
+              <img src="./assets/catalog.png" alt="">
+            </div>
             <h3>Categorías Completas</h3>
             <p>Ofrecemos <span class="highlight">10,000+</span> Categorías de productos que incluyen decoración del hogar, regalos navideños, suministros para mascotas, utensilios de cocina y artículos para deportes al aire libre. Ofrecemos recomendaciones sobre productos de moda para aumentar sus ganancias.</p>
           </div>
           <div class="card">
-            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon" viewBox="0 0 1024 1024" width="34px" height="34px">
-              <path d="M279.893333 303.786667l165.546667-124.586667c46.08-34.133333 105.813333-42.666667 158.72-22.186667L868.693333 256c17.066667 6.826667 35.84 10.24 52.906667 
-              10.24h44.373333c11.946667 0 23.893333 10.24 23.893334 22.186667v322.56c0 11.946667-10.24 23.893333-23.893334 23.893333h-58.026666c-8.533333 0-17.066667 
-              3.413333-22.186667 8.533333l-11.946667 10.24c-3.413333 3.413333-8.533333 1.706667-10.24-1.706666L554.666667 279.893333c-8.533333-10.24-22.186667-11.946667-32.426667-5.12l-141.653333 
-              78.506667c-29.013333 15.36-61.44 17.066667-92.16 5.12-15.36-6.826667-23.893333-25.6-17.066667-40.96 1.706667-6.826667 5.12-10.24 8.533333-13.653333zM63.146667 
-              633.173333h49.493333l35.84-42.666666c30.72-37.546667 87.04-42.666667 124.586667-11.946667 13.653333 11.946667 23.893333 27.306667 29.013333 44.373333 30.72 
-              8.533333 52.906667 30.72 61.44 61.44 22.186667 6.826667 40.96 20.48 51.2 40.96 18.773333 3.413333 35.84 11.946667 49.493333 25.6 29.013333 29.013333 34.133333 
-              75.093333 11.946667 109.226667l-5.12 8.533333v1.706667c23.893333 15.36 54.613333 10.24 71.68-11.946667 8.533333-11.946667 10.24-25.6 
-              8.533333-39.253333v-1.706667h1.706667l3.413333 3.413334c17.066667 17.066667 46.08 20.48 66.56 6.826666 17.066667-11.946667 23.893333-32.426667 
-              20.48-51.2v-1.706666h1.706667l3.413333 3.413333c17.066667 17.066667 44.373333 20.48 66.56 6.826667 17.066667-11.946667 25.6-32.426667 
-              22.186667-51.2h1.706667l3.413333 3.413333c17.066667 17.066667 42.666667 18.773333 61.44 8.533333 23.893333-13.653333 32.426667-46.08 
-              17.066667-69.973333-1.706667-3.413333-3.413333-5.12-5.12-8.533333L783.36 631.466667 530.773333 327.68c-3.413333-3.413333-6.826667-3.413333-10.24-1.706667L399.36 
-              392.533333c-39.253333 20.48-85.333333 25.6-126.293333 10.24-23.893333-8.533333-40.96-25.6-49.493334-47.786666-6.826667-23.893333-3.413333-47.786667 
-              8.533334-68.266667 3.413333-5.12 1.706667-11.946667-5.12-15.36-1.706667-1.706667-3.413333-1.706667-5.12-1.706667H58.026667c-13.653333-1.706667-23.893333 
-              8.533333-23.893334 20.48v320.853334c5.12 11.946667 15.36 22.186667 29.013334 22.186666z m174.08-23.893333c-18.773333-10.24-42.666667-5.12-56.32 
-              11.946667l-34.133334 40.96c-15.36 18.773333-11.946667 46.08 5.12 59.733333H153.6l5.12 3.413333c13.653333 10.24 32.426667 11.946667 47.786667 3.413334 
-              1.706667-1.706667 1.706667 0 3.413333 1.706666v3.413334c-3.413333 15.36 3.413333 32.426667 15.36 40.96l3.413333 3.413333c13.653333 10.24 30.72 11.946667 
-              46.08 5.12 1.706667-1.706667 3.413333 0 3.413334 1.706667v1.706666c-1.706667 13.653333 5.12 29.013333 17.066666 39.253334l3.413334 1.706666c13.653333 
-              10.24 30.72 11.946667 46.08 3.413334 1.706667-1.706667 3.413333 0 3.413333 1.706666v1.706667c1.706667 10.24 8.533333 20.48 17.066667 27.306667l1.706666 
-              1.706666c18.773333 13.653333 46.08 11.946667 61.44-8.533333 1.706667-1.706667 3.413333-3.413333 3.413334-5.12l5.12-10.24c10.24-18.773333 
-              8.533333-40.96-8.533334-54.613333-11.946667-11.946667-30.72-13.653333-47.786666-8.533334-1.706667 0-1.706667 0-1.706667-1.706666v-1.706667c1.706667-23.893333-17.066667-42.666667-40.96-46.08-5.12 0-11.946667 1.706667-17.066667 3.413333-6.826667 1.706667-5.12-5.12-5.12-5.12 8.533333-22.186667-1.706667-46.08-23.893333-56.32-11.946667-5.12-25.6-3.413333-37.546667 1.706667-5.12 1.706667-3.413333-3.413333-3.413333-3.413333 13.653333-20.48 6.826667-46.08-13.653333-58.026667z" fill="#ffffff"></path></svg></div>
+            <div class="icon">
+              <img src="./assets/quality.png" alt="">
+            </div>
             <h3>Calidad superior</h3>
             <p>Tenemos más de <span class="highlight">10,000</span> socios estables y han establecido relaciones de cooperación estables y de confianza mutua a largo plazo con ellos. Su tasa de recompra es tan alta como <span class="highlight">80%</span>.</p>
           </div>
@@ -309,7 +275,7 @@
     </section>
 
     <!-- TARJETAS -->
-    <section class="section-tarjetas">
+    <section class="section-tarjetas" id="linea-productos">
       <div class="text-container">
         <h1>Algunos de nuestros productos</h1>
         <p>Ofrecemos una amplia gama de empaques y envases de alta calidad fabricados por nosotros</p>
@@ -357,72 +323,74 @@
    
     <!-- TESTIMONIOS -->
     <section class="testimonios" id="testimonios">
-      <h1>Clientes Testimonios</h1>
-      <div class="card-testimonios">
-        <div class="testi">
-          <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_testimonials_1.webp" alt="">
-          <div class="overlay">
-            <p>Cliente desde 2020</p>
-            <p>Ventas 2022 - <strong>$3200000</strong></p>
+      <div class="text-container">
+        <h1>Atendemos Mercados Globales</h1>
+      </div>
+  
+      <div class="parent">
+          <div class="flechaizquierda">
+            <img src="./assets/flecha-izquierda.png" width="20px" height="20px" alt="">
           </div>
-        </div>
-        <div class="testi">
-          <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_testimonials_2.webp" alt="">
-          <div class="overlay">
-            <p>Cliente desde 2020</p>
-            <p>Ventas 2022 - <strong>$3200000</strong></p>
+                
+          <div class="slider-banderas">
+                  
+            <div class="barra-banderas">
+                <div class="bandera">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Peru_bandera.png">
+                  <h3>Perú</h3>
+                </div>
+                <div class="bandera">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Peru_bandera.png">
+                  <h3>Perú</h3>
+                </div>
+                <div class="bandera">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Peru_bandera.png">
+                  <h3>Perú</h3>
+                </div>
+                <div class="bandera">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Peru_bandera.png">
+                  <h3>Perú</h3>
+                </div>
+                <div class="bandera">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Peru_bandera.png">
+                  <h3>Perú</h3>
+                </div>
+                
+
+                <div class="bandera">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Peru_bandera.png">
+                  <h3>Perú</h3>
+                </div>
+                <div class="bandera">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Peru_bandera.png">
+                  <h3>Perú</h3>
+                </div>
+                <div class="bandera">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Peru_bandera.png">
+                  <h3>Perú</h3>
+                </div>
+                <div class="bandera">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Peru_bandera.png">
+                  <h3>Perú</h3>
+                </div>
+                <div class="bandera">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Peru_bandera.png">
+                  <h3>Perú</h3>
+                </div>
+            </div>
+                  
           </div>
-        </div>
-        <div class="testi">
-          <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_testimonials_3.webp" alt="">
-          <div class="overlay">
-            <p>Cliente desde 2020</p>
-            <p>Ventas 2022 - <strong>$3200000</strong></p>
+
+          <div class="flechaderecha">
+            <img src="./assets/flecha-derecha.png" width="20px" height="20px" alt="">
           </div>
-        </div>
-        <div class="testi">
-          <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_testimonials_4.webp" alt="">
-          <div class="overlay">
-            <p>Cliente desde 2020</p>
-            <p>Ventas 2022 - <strong>$3200000</strong></p>
-          </div>
-        </div>
-        <div class="testi">
-          <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_testimonials_5.webp" alt="">
-          <div class="overlay">
-            <p>Cliente desde 2020</p>
-            <p>Ventas 2022 - <strong>$3200000</strong></p>
-          </div>
-        </div>
-        <div class="testi">
-          <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_testimonials_6.webp" alt="">
-          <div class="overlay">
-            <p>Cliente desde 2020</p>
-            <p>Ventas 2022 - <strong>$3200000</strong></p>
-          </div>
-        </div>
-        <div class="testi">
-          <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_testimonials_7.webp" alt="">
-          <div class="overlay">
-            <p>Cliente desde 2020</p>
-            <p>Ventas 2022 - <strong>$3200000</strong></p>
-          </div>
-        </div>
-        <div class="testi">
-          <img src="https://toptradesourcing.com/wp-content/uploads/2023/12/top_testimonials_8.webp" alt="">
-          <div class="overlay">
-            <p>Cliente desde 2020</p>
-            <p>Ventas 2022 - <strong>$3200000</strong></p>
-          </div>
-        </div>
       </div>
     </section>
 
 
      <!-- SOLICITUDDDDDDDDDDD -->
-    <section class="solicitud">
-
-       <h2>Envíe su solicitud de abastecimiento</h2>
+    <section class="solicitud" id="formulario">
+       <h1>Envíe su solicitud de abastecimiento</h1>
           <p class="form-desc">
             Actualmente, solo aceptamos pedidos <strong>desde $5000 dólares.</strong>
           </p>
@@ -433,10 +401,10 @@
      
         <div class="contacto">
           <h3>Contacto más rápido</h3>
-          <p>Póngase en contacto directamente con nuestro gerente comercial</p>
+          <p>Póngase en contacto directamente con nuestro gerente comercial.</p>
           <div class="imagen-contacto">
             <img src="https://toptradesourcing.com/wp-content/uploads/2024/06/Tina-He-2024081908434595.webp" alt="tina el">
-            <p><strong>tina el</strong><br>Customer Service Manager</p>
+            <p><strong>Frabricio Ma</strong><br>Gerente Comercial</p>
           </div>
           <div class="qr-codes">
             <div>
@@ -448,9 +416,10 @@
               <img src="https://toptradesourcing.com/wp-content/uploads/2024/06/wechat-he-1.webp" alt="QR WeChat">
             </div>
           </div>
-          <p><a href="mailto:ventas@toptradesourcing.com">sales@fulltegrity.com</a></p>
-          <p><strong>Oficina de Ningbo</strong><br>
-            No.70, Erheng Street, Laowaitan, Ningbo, China
+          <p><a href="sales@fulltegrity.com">sales@fulltegrity.com</a></p>
+          <p><strong>Oficina de Ningbo</strong></p>
+          <p id="direccion">No.70,Erheng Street,Laowaitan,
+          Ningbo,China
           </p>
           <p><strong>WeChat</strong><br>
             <a href="">(86)1234567890</a>
@@ -521,7 +490,7 @@
           </div>
 
           <div class="boton-form">
-              <button type="submit" class="btn-enviar">ENVIAR<br>FORMULARIO</button>
+              <button type="submit" class="btn-enviar">ENVIAR</button>
           </div>
           
         </form>
@@ -533,14 +502,13 @@
       <div class="footer-container">
         <div class="footer-logo">
           <img src="https://toptradesourcing.com/wp-content/uploads/2022/10/top_footer_logo.webp" alt="TopTrade" class="logo">
-          <p>La empresa líder en sourcing en China</p>
-          <p>Top 3 en Ningbo & Yiwu</p>
-          <p>Facturación 2024: 1 mil millones USD</p>
+          <p>La empresa líder en empaques y envases en China.</p>
+ 
           <a href="" class="contact-button">Contáctanos</a>
         </div>
 
         <div class="footer-products">
-          <h3>PRODUCTS</h3>
+          <h3>PRODUCTOS</h3>
 
           <div class="product-columns">
             <ul>
@@ -569,10 +537,10 @@
 
         <div class="footer-contact">
           <h3>CONTÁCTANOS</h3>
-          <p><strong>Correo Electrónico: </strong> ventas@toptradesourcing.com</p>
+          <p><strong>Correo Electrónico: </strong> <br>sales@fulltegrity.com</p>
           <p><strong>WeChat: </strong> (86)1234567890</p>
           <p><strong>Oficina de Ningbo: </strong> No.70,Erheng Street,Laowaitan, Ningbo,China</p>
-          <p><strong>Oficina de Yiwu: </strong> Edificio Union Group, Calle North Zongze, Yiwu, China</p>
+          
 
           <div class="social-icons">
             <a href="" class="linkedin">
@@ -597,7 +565,7 @@
 
       <div class="footer-bottom">
         <div class="copy">
-          <p>Copyright 2025 toptradesourcing.com | Todos los derechos reservados Política de privacidad</p>
+          <p>Copyright 2025 Fulltegrity | Todos los derechos reservados.</p>
         </div>
       </div>
     </section>
@@ -608,6 +576,13 @@
     <script src="./js/barra.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      function redirectToPage(url, event) {
+        event.preventDefault();
+        console.log('Redireccionando a:', url);
+        window.location.href = url;
+      }
     </script>
   </body>
 </html>

@@ -126,6 +126,19 @@ function checkTopBar() {
     }
 }
 
+function scrollToSection(id, element) {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  const links = document.querySelectorAll('.menu .links a');
+  links.forEach(link => link.classList.remove('active'));
+
+  element.classList.add('active');
+}
+
+
 function loadVideo(wrapper) {
   const iframe = document.createElement("iframe");
   iframe.width = "560";
