@@ -669,6 +669,9 @@ body {
   padding: 60px 20px;
   text-align: center;
   justify-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .parent{
