@@ -581,6 +581,7 @@ body {
 .product p {
     font-size: 1vw;
     margin: 0;
+    padding-top: 5px;
     padding-bottom: 10px;
     width: 100%;
     text-align: center;
@@ -603,6 +604,8 @@ body {
   justify-items: center;
   align-items: center;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .why-toptrade .containertoptrade {
