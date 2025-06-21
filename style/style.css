@@ -584,6 +584,8 @@ body {
   justify-items: center;
   align-items: center;
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .why-toptrade .containertoptrade {
