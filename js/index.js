@@ -139,19 +139,6 @@ function scrollToSection(id, element) {
 }
 
 
-function loadVideo(wrapper) {
-  const iframe = document.createElement("iframe");
-  iframe.width = "560";
-  iframe.height = "560";
-  iframe.src = "https://www.youtube.com/embed/MZ2v8eYZmBY?autoplay=1";
-  iframe.frameBorder = "0";
-  iframe.allow =
-    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-  iframe.allowFullscreen = true;
-
-  wrapper.innerHTML = "";
-  wrapper.appendChild(iframe);
-}
 
 
 window.addEventListener("scroll", checkTopBar);
