@@ -39,4 +39,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (counters.length) observer.observe(counters[0]);
   });
-
