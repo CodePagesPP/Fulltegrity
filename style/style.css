@@ -369,7 +369,6 @@ body {
 .pregunta {
   display: flex;
   flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
   gap: 40px;
   padding-bottom: 100px;
@@ -411,8 +410,8 @@ body {
   margin-bottom: 20px;
   margin-top: 0;
   display: flex;
-  align-items: center;
   gap: 10px;
+  max-width: 640px;
 }
 
 .texto p {
@@ -420,7 +419,7 @@ body {
   line-height: 1.75rem;
   color: #72777b;
   padding-bottom: 50px;
-  max-width: 600px;
+  max-width: 640px;
 }
 
 
@@ -944,22 +943,36 @@ body {
 
 .grid-form {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
     gap: 1.5rem;
   }
 
 
-@media(max-width: 1456px) {
+@media(min-width: 1370px) and (max-width: 1655px) {
   .grid-form {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1.5rem;
   }
 }
 
-@media (max-width: 992px) {
+@media(min-width: 1118px) and (max-width: 1369px) {
+  .grid-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 1117px) {
   .solicitud h1 {
     font-size: 28px;
+  }
+
+  .grid-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+    gap: 1.5rem;
   }
 
   .formulario {
