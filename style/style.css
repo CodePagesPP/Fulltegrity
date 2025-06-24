@@ -44,6 +44,7 @@ body {
 
 .header-text p {
   margin: 0.8em;
+  margin-left: 2.2em;
 }
 
 .foco {
@@ -83,9 +84,9 @@ body {
 }
 
 .container {
-  max-width: 1800px; /*cambiar en caso de error*/
+  max-width: 100%; /*cambiar en caso de error*/
   margin: 0 auto;
-  padding: 15px 20px;
+  padding: 15px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -185,14 +186,14 @@ body {
       align-items: center;
       list-style: none;
      position: absolute;
-      right: 0.2%;
+      right: 1.5%;
       top: 15px;
     }
 
 
     .header-text {
       width: 60%;
-      padding-left: 2%;
+
       text-align: left;
       align-items: center;
       font-size: 18px;
