@@ -855,12 +855,17 @@ body {
   border-radius: 2px;
 }
 
+.grid-form option {
+  font-family: 'Neuwelt';
+}
+
 .grid-form select {
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.25rem;
   border: 1px solid #ccc;
   border-radius: 2px;
+  font-family: 'Neuwelt';
 }
 
 .contact-container {
@@ -918,10 +923,11 @@ body {
 .btn-enviar {
   background-color: #2c91de;
   color: white;
-  border-radius: 8px;
-  padding: 1em 3em;
+  border-radius: 5px;
+  padding: 10px 18px;
   line-height: 24px;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: bold;
   border: none;
   cursor: pointer;
   margin-top: 1rem;
